@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* #region header*/
+header {
+    background: var(--zm-primary);
+}
+
+/* #endregion header*/
+
+/* #region main*/
+main {
+    background: var(--zm-primary);
+}
+
+/* #endregion main*/
+
+/* #region footer*/
+footer {
+    background: var(--zm-ft);
+}
+
+/* #endregion footer*/
+
+
+/* #region utilities*/
+.debug {
+    border: 1px dashed red;
+    height: 100px;
+}
+
+:root {
+    --zm-primary: #000000;
+    --zm-ft: #222222;
+    --zm-white: #ffffff;
+    --zm-lightgr: #66717a;
+    --zm-success: #4bc800;
+    --zm-darkgr: #4a4a4a;
+    --zm-danger: #e81832;
+
+}
+/* #endregion utilities*/
