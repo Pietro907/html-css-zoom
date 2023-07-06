@@ -4,12 +4,38 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /* #region header*/
 header {
     background: var(--zm-primary);
+    color: var(--zm-white);
+    position: sticky;
+    height: 54px;
 }
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.view_card {
+    background: var(--zm-lightgr);
+    color: var(--zm-white);
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    padding: 0.3rem 0.3rem;
+    border-radius: 5px;
+}
+
+.container > i, .right_sq {
+    padding: 0 0.6rem 0 0;
+}
+
 
 /* #endregion header*/
 
@@ -29,6 +55,18 @@ footer {
 
 
 /* #region utilities*/
+.pos_dx_abs {
+position: absolute;
+top: 10px;
+right: 0;
+}
+
+
+
+
+
+
+
 .debug {
     border: 1px dashed red;
     height: 100px;
@@ -44,4 +82,5 @@ footer {
     --zm-danger: #e81832;
 
 }
+
 /* #endregion utilities*/
