@@ -43,7 +43,35 @@ header {
 /* #region main*/
 main {
     background: var(--zm-primary);
+    height: calc(100vh - 200px);
 }
+
+.cont {
+    width: 80%;
+    height: 100%;
+    max-width: 1170px;
+}
+
+.row{
+    display: flex;
+    height: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% / 12 * 7);
+    height: 200px;
+    gap: 5px
+}
+
+.row {
+    height: 100%;
+}
+
+
+
+
 
 /* #endregion main*/
 
@@ -57,11 +85,6 @@ footer {
     height: 100%;
 }
 
-.row {
-    display: flex;
-    height: 100%;
-}
-
 .col_2 {
     display: flex;
     width: calc(100%/12*2);
@@ -70,7 +93,6 @@ footer {
 
 
 .col_8 {
-    display: flex;
     width: calc(100%/12*8);
     height: 100%;
     text-align: center;
@@ -82,7 +104,23 @@ footer {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 45px;
+    line-height: 100px;
+}
+
+.padd {
+    padding: 0 1rem 1rem;
+}
+
+.icon_color {
+    color: var(--zm-white);
+}
+
+.icon_color_special {
+    color: var(--zm-success);
+}
+
+.icon_big {
+    font-size: xx-large;
 }
 
 /* #endregion footer*/
@@ -96,42 +134,32 @@ footer {
 }
 
 .flex_st {
+    display: flex;
     justify-content: start;
     align-items: center;
 }
 
 .flex_ctr {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .flex_end {
+    display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.padd {
-    padding: 0 1rem 1rem;
-}
-
-.icon_color {
-    color: var(--zm-white);
-}
-
-.icon_big {
-    font-size: xx-large;
+.ov_flow {
+    overflow: scroll;
 }
 
 
 
-
-
-
-
-.debug {
+/* .debug {
     border: 1px dashed red;
-    height: 100px;
-}
+} */
 
 :root {
     --zm-primary: #000000;
@@ -145,3 +173,25 @@ footer {
 }
 
 /* #endregion utilities*/
+
+
+/*<i class="fa-sharp fa-solid fa-grid"></i>
+<i class='fas fa-expand-arrows-alt'></i>
+
+<i class="fa-solid fa-microphone"></i>
+<i class="fa-solid fa-video"></i>
+<i class="fa-solid fa-user-plus"></i>
+<i class="fa-solid fa-user-group"></i>
+<i class="fa-solid fa-chart-column"></i>
+<i class="fa-solid fa-share-from-square"></i>
+<i class="fa-solid fa-comment"></i>
+<i class="fa-solid fa-record-vinyl"></i>
+<i class="fa-solid fa-ellipsis"></i>
+
+<i class="fa-solid fa-square"></i>
+<i class="fa-solid fa-square"></i>
+<i class="fa-solid fa-square"></i>
+<i class="fa-solid fa-square"></i>
+
+<i class='fas fa-angle-up'></i>
+<i class="fa-solid fa-table-cells"></i>*/
