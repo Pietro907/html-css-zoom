@@ -69,7 +69,7 @@ main {
 
 .row{
     display: flex;
-    height: 100%;
+
 }
 
 .col {
@@ -83,6 +83,11 @@ main {
 
 .card {
     position: relative;
+}
+
+.card > img {
+
+    object-fit: contain;
 }
 
 .mini_card {
